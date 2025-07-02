@@ -4,7 +4,7 @@
 
 ## 概要
 
-このプロジェクトは、複数のサービス（Webアプリケーション、モバイルアプリ、APIサービス）の法的文書を統一的に管理・公開するためのサイトです。
+このプロジェクトは、複数のサービス（Webアプリケーション、Muse アプリ、APIサービス）の法的文書を統一的に管理・公開するためのサイトです。
 
 ## ディレクトリ構造
 
@@ -17,7 +17,7 @@ legal-docs/
     ├── web-app/            # Webアプリケーション
     │   ├── privacy-policy.html
     │   └── terms-of-service.html
-    ├── mobile-app/         # モバイルアプリケーション
+    ├── muse-app/           # Muse アプリケーション
     │   ├── privacy-policy.html
     │   └── terms-of-service.html
     └── api-service/        # APIサービス
