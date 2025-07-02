@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muse アプリ - 法的文書</title>
+    <link rel="stylesheet" href="../../assets/style.css">
+    <style>
+        .language-selector {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .language-selector h1 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+        
+        .language-options {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .language-option {
+            display: block;
+            padding: 20px 30px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            min-width: 120px;
+            transition: background-color 0.3s;
+        }
+        
+        .language-option:hover {
+            background: #2980b9;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="language-selector">
+            <a href="../../index.html" class="back-link">← 法的文書一覧に戻る</a>
+            
+            <h1>Muse アプリ - 言語選択</h1>
+            <p>お好みの言語を選択してください / Please select your preferred language</p>
+            
+            <div class="language-options">
+                <a href="ja/" class="language-option">日本語</a>
+                <a href="en/" class="language-option">English</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

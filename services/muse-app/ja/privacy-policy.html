@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>プライバシーポリシー - Muse アプリ</title>
-    <link rel="stylesheet" href="../../assets/style.css">
+    <link rel="stylesheet" href="../../../assets/style.css">
+    <script src="../../../assets/config.js"></script>
     <style>
         .legal-document {
             max-width: 800px;
@@ -60,16 +61,17 @@
 <body>
     <div class="container">
         <div class="legal-document">
-            <a href="../../index.html" class="back-link">← 法的文書一覧に戻る</a>
+            <a href="../../../index.html" class="back-link">← 法的文書一覧に戻る</a>
             
             <h1>プライバシーポリシー（Muse アプリ）</h1>
-            <p class="last-updated">最終更新日: 2025年7月2日</p>
+            <p class="last-updated" data-date="lastUpdated">最終更新日: 2025年7月2日</p>
             
             <h2>1. 個人情報の取得について</h2>
             <p>当社は、Muse アプリケーションにおいて、以下の場合に個人情報を取得いたします：</p>
             <ul>
                 <li>アプリのダウンロード・インストール時</li>
-                <li>アカウント登録時</li>
+                <li>アカウント登録時（メール、Spotify、Apple ID ログイン含む）</li>
+                <li>第三者サービス（Spotify、Apple）との連携時</li>
                 <li>アプリ内購入時</li>
                 <li>プッシュ通知の設定時</li>
                 <li>サポートへのお問い合わせ時</li>
@@ -86,6 +88,12 @@
                 <li>連絡先情報（許可された場合のみ）</li>
                 <li>プッシュ通知トークン</li>
                 <li>アプリ内購入履歴</li>
+                <li><strong>第三者認証サービス経由の情報：</strong>
+                    <ul>
+                        <li>Spotify: ユーザー名、プロフィール情報、音楽再生履歴</li>
+                        <li>Apple ID: ユーザー名、メールアドレス、プロフィール情報</li>
+                    </ul>
+                </li>
             </ul>
             
             <h2>3. デバイス権限について</h2>
@@ -93,9 +101,7 @@
             <ul>
                 <li><strong>位置情報：</strong> 位置に基づいたサービス提供のため</li>
                 <li><strong>カメラ：</strong> 写真撮影機能提供のため</li>
-                <li><strong>マイク：</strong> 音声録音機能提供のため</li>
                 <li><strong>ストレージ：</strong> データ保存のため</li>
-                <li><strong>連絡先：</strong> 友達招待機能提供のため</li>
                 <li><strong>通知：</strong> プッシュ通知送信のため</li>
             </ul>
             <p>これらの権限は、設定画面からいつでも変更できます。</p>
@@ -105,6 +111,8 @@
             <ul>
                 <li>アプリケーションの提供・機能改善</li>
                 <li>ユーザー認証・アカウント管理</li>
+                <li>第三者サービス（Spotify、Apple）との連携によるパーソナライズ機能</li>
+                <li>音楽体験のカスタマイズとレコメンデーション</li>
                 <li>カスタマイズされたコンテンツの提供</li>
                 <li>プッシュ通知の送信</li>
                 <li>利用統計・分析</li>
@@ -116,10 +124,40 @@
             <h2>5. 第三者サービスとの連携</h2>
             <p>本アプリは、以下の第三者サービスを利用しており、それぞれのプライバシーポリシーが適用されます：</p>
             <ul>
+                <li><strong>認証・ログインサービス：</strong>
+                    <ul>
+                        <li>Spotify（音楽ストリーミング・ログイン）- <a href="https://www.spotify.com/legal/privacy-policy/" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a></li>
+                        <li>Apple ID（Apple ログイン）- <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a></li>
+                    </ul>
+                </li>
                 <li>Google Analytics（利用統計分析）- <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a></li>
                 <li>Firebase（プッシュ通知・認証）- <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a></li>
                 <li>Apple App Store / Google Play Store（アプリ内購入）- <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple</a> / <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google</a></li>
                 <li>広告配信サービス（個人に最適化された広告表示）- 各サービス提供者のプライバシーポリシーをご確認ください</li>
+            </ul>
+            
+            <h2>5-1. 第三者認証サービスについて</h2>
+            <p><strong>Spotify との連携：</strong></p>
+            <ul>
+                <li>Spotify アカウントでのログイン機能</li>
+                <li>音楽再生履歴の取得（パーソナライズのため）</li>
+                <li>プレイリスト情報の同期</li>
+                <li>お気に入り楽曲の分析</li>
+            </ul>
+            
+            <p><strong>Apple ID との連携：</strong></p>
+            <ul>
+                <li>Apple ID でのログイン機能</li>
+                <li>基本プロフィール情報の取得</li>
+                <li>メールアドレスの匿名化オプション対応</li>
+                <li>Apple Music 連携（該当する場合）</li>
+            </ul>
+            
+            <p><strong>データ連携の制御：</strong></p>
+            <ul>
+                <li>アプリ内設定から各サービスとの連携を個別に制御可能</li>
+                <li>連携解除後も本アプリの基本機能は利用可能</li>
+                <li>連携データは当社サーバーで適切に暗号化して保存</li>
             </ul>
             
             <h2>6. データの保存と削除</h2>
@@ -127,8 +165,9 @@
             <p>アプリを削除（アンインストール）した場合でも、一部のデータはサーバー上に残る場合があります。完全な削除をご希望の場合は、以下の方法でお申し出ください：</p>
             <ul>
                 <li>アプリ内の「設定」→「アカウント削除」から申請</li>
-                <li>サポートメール（mobile-privacy@example.com）への削除依頼</li>
-                <li>削除申請は通常7営業日以内に処理いたします</li>
+                <li>サポートメール（<span data-email="privacy"></span>）への削除依頼</li>
+                <li>削除申請は通常<span data-period="deletion"></span>に処理いたします</li>
+                <li><strong>第三者サービス連携データ：</strong> Spotify・Apple ID との連携を解除することで、関連データの新規取得を停止できます</li>
             </ul>
             
             <h2>7. データの保存期間</h2>
@@ -139,6 +178,12 @@
                 <li><strong>プッシュ通知トークン：</strong> アプリアンインストールまで</li>
                 <li><strong>購入履歴：</strong> 法定保存期間（7年間）</li>
                 <li><strong>分析データ：</strong> 匿名化処理後、統計目的で保存</li>
+                <li><strong>第三者連携データ：</strong>
+                    <ul>
+                        <li>Spotify データ: 連携解除から<span data-period="thirdPartyDeletion"></span>に削除</li>
+                        <li>Apple ID データ: 連携解除から<span data-period="thirdPartyDeletion"></span>に削除</li>
+                    </ul>
+                </li>
             </ul>
             
             <h2>8. 広告について</h2>
@@ -175,6 +220,14 @@
                 <li>データ分析への参加</li>
                 <li>Cookie の利用設定</li>
                 <li>第三者サービスとのデータ共有設定</li>
+                <li><strong>音楽サービス連携：</strong>
+                    <ul>
+                        <li>Spotify 連携の有効/無効</li>
+                        <li>Apple Music 連携の有効/無効</li>
+                        <li>音楽データの同期設定</li>
+                        <li>プレイリスト共有設定</li>
+                    </ul>
+                </li>
             </ul>
             
             <h2>12. 法的準拠</h2>
@@ -200,13 +253,11 @@
             <h2>14. お問い合わせ</h2>
             <p>プライバシーに関するお問い合わせは、以下までご連絡ください：</p>
             <p>
-                <strong>個人情報保護責任者：</strong> プライバシーオフィサー<br>
-                <strong>メール：</strong> muse-privacy@example.com<br>
-                <strong>アプリ内：</strong> 設定 → ヘルプ・サポート → お問い合わせ<br>
-                <strong>郵送：</strong> 〒000-0000 東京都○○区○○ ○-○-○<br>
-                <strong>電話：</strong> 03-0000-0000（平日 9:00-18:00）
+                <strong>メール：</strong> <a href="mailto:" data-email="privacy"></a><br>
+                <strong>アプリ内：</strong> 設定 → サポート → お問い合わせ<br>
+                <!-- <strong>電話：</strong> <span data-company="phone"></span>（<span data-company="businessHours"></span>） -->
             </p>
-            <p><strong>対応期間：</strong> お問い合わせから30日以内に回答いたします。</p>
+            <p><strong>対応期間：</strong> お問い合わせから<span data-period="response"></span>に回答いたします。</p>
             
             <h2>15. プライバシーポリシーの変更</h2>
             <p>本プライバシーポリシーは、法令の変更やアプリの機能追加に伴い変更する場合があります。</p>
