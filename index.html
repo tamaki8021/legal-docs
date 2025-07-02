@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>法的文書 - プライバシーポリシー・利用規約</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>法的文書</h1>
+            <p>各サービスのプライバシーポリシーと利用規約をご確認いただけます。</p>
+        </header>
+
+        <main>
+            <section class="services-grid">
+                <div class="service-card">
+                    <h2>Webアプリケーション</h2>
+                    <p>Webアプリケーションサービスの法的文書</p>
+                    <div class="links">
+                        <a href="services/web-app/privacy-policy.html" class="btn btn-primary">プライバシーポリシー</a>
+                        <a href="services/web-app/terms-of-service.html" class="btn btn-secondary">利用規約</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <h2>モバイルアプリ</h2>
+                    <p>モバイルアプリケーションサービスの法的文書</p>
+                    <div class="links">
+                        <a href="services/mobile-app/privacy-policy.html" class="btn btn-primary">プライバシーポリシー</a>
+                        <a href="services/mobile-app/terms-of-service.html" class="btn btn-secondary">利用規約</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <h2>API サービス</h2>
+                    <p>API サービスの法的文書</p>
+                    <div class="links">
+                        <a href="services/api-service/privacy-policy.html" class="btn btn-primary">プライバシーポリシー</a>
+                        <a href="services/api-service/terms-of-service.html" class="btn btn-secondary">利用規約</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Your Company Name. すべての権利が留保されています。</p>
+            <p>最終更新日: <span id="lastUpdated">2025年7月2日</span></p>
+        </footer>
+    </div>
+
+    <script>
+        // 最終更新日を自動で設定
+        document.getElementById('lastUpdated').textContent = new Date().toLocaleDateString('ja-JP', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+    </script>
+</body>
+</html>
